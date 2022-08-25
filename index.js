@@ -157,15 +157,15 @@ function hungryDog(weight, age){
     return weight * 0.02;
   }else if(age <=1 && age >=0.583){
     return weight * 0.04;
-  }else if(age<=0.583 && age>=0.333){
-    return weight * 0.5;
-  }else if(age<=0.3333){
+  }else if(age <0.583 && age >=0.333){
+    return weight * 0.05;
+  }else if(age <0.3333){
     return weight * 0.10;
   }else{
     return  "please try again";
   }
 }
-console.log('task 3',hungryDog(6,3));
+console.log('task 3',hungryDog(16,.05));
 console.log('task 3-2',hungryDog(15,1))
 
 
@@ -231,7 +231,7 @@ Using the miles function below do the following:
 */
 
 function miles(km){
-  return km * 0.62;
+  return km * 0.621371;
 }
 
 console.log('task 5a', miles(6));
@@ -288,7 +288,7 @@ Using the grade function below do the following:
 */
 
 function grade(score){
-if (score= 90){
+if (score >=90){
 return 'you got an A';
 }else if(score>= 80 && score <90){
 return 'you got a B';
